@@ -1,6 +1,6 @@
 name 'my-machine'
-maintainer 'The Authors'
-maintainer_email 'you@example.com'
+maintainer 'Stephen Kershaw'
+maintainer_email 'steve@stevek.co.uk'
 license 'all_rights'
 description 'Installs/Configures my-machine'
 long_description 'Installs/Configures my-machine'
