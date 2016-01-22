@@ -1,0 +1,13 @@
+DEPENDENCIES
+  my-machine
+    path: .
+    metadata: true
+
+GRAPH
+  chef_handler (1.2.0)
+  chocolatey (0.6.2)
+    windows (~> 1.38)
+  my-machine (0.1.0)
+    chocolatey (>= 0.0.0)
+  windows (1.39.1)
+    chef_handler (>= 0.0.0)

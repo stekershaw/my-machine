@@ -5,3 +5,5 @@ license 'all_rights'
 description 'Installs/Configures my-machine'
 long_description 'Installs/Configures my-machine'
 version '0.1.0'
+
+depends 'chocolatey'
