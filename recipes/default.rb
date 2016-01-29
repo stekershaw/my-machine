@@ -19,8 +19,10 @@ when 'windows'
     adobereader
     atom
     bind-toolsonly
+    conemu
     cyberduck
     dropbox
+    ethanbrown.conemuconfig
     fiddler4
     git
     intellijidea-community
@@ -42,12 +44,14 @@ end
 #
 #  golang:       I want to be able to update quicker that the chocolatey
 #                package tends to
+#  robomongo:    Outdated on chocolatey
 #  visualstudio: May need to be Express/Community/Web Edition etc depending on
 #                circumstance. Also huge, so perhaps not always wanted.
 #  yed:          broken on chocolatey at the time of writing (2016-01-21)
 #
 manual_chocolatey = %w{
     golang
+    robomongo
     visualstudio2013expressweb
     yed
 }
