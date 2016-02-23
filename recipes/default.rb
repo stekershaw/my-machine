@@ -24,6 +24,7 @@ when 'windows'
     dropbox
     ethanbrown.conemuconfig
     fiddler4
+    gimp
     git
     intellijidea-community
     mssqlservermanagementstudio2014express
