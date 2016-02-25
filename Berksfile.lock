@@ -9,5 +9,8 @@ GRAPH
     windows (~> 1.38)
   my-machine (0.1.0)
     chocolatey (>= 0.0.0)
+    webpi (>= 0.0.0)
+  webpi (2.0.0)
+    windows (>= 1.39.0)
   windows (1.39.1)
     chef_handler (>= 0.0.0)

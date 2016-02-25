@@ -9,11 +9,14 @@
 # It is a way of doing what https://ninite.com/ does with chef and chocolatey.
 
 include_recipe 'chocolatey'
+include_recipe 'webpi'
  
 # Package specific notes
 #  Dropbox will bring up its 'link' screen after install but this does not block.
 case node['platform_family']
 when 'windows'
+
+  # Chocolatey install
   %w{
     7zip
     adobereader
@@ -37,6 +40,16 @@ when 'windows'
     wireshark
   }.each do |package|
     chocolatey package  # default action is install
+  end
+
+  # WebPI
+  %w{
+    IIS7
+  }.each do |product|
+    webpi_product product do
+      accept_eula true
+      action :install
+    end
   end
 end
 
@@ -75,3 +88,6 @@ tbc = %w{
 
 # Need to install manually:
 #  https://www.docker.com/docker-toolbox
+#  http://docs.aws.amazon.com/cli/latest/userguide/installing.html
+
+
